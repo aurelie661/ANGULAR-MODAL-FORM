@@ -1,0 +1,5 @@
+<app-button (click)="changeModalVisilibty('form')">Ajouter un film</app-button>
+<app-modal  (click)="changeModalVisilibty('')" *ngIf="modalVisibility === 'form'">
+    <app-form (movie)="addMovieHandler($event)"></app-form>
+</app-modal>
+<app-detail [movies]="movies"></app-detail>

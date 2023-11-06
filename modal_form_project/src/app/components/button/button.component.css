@@ -1,0 +1,27 @@
+button {
+  background-color: #911212;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  max-height: 4rem;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+  letter-spacing: 0.5px;
+  /* margin-inline: 20%;
+  margin-block: 20%; */
+  transition: 0.8s;
+}
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: black solid 1px;
+    padding: 10px;
+    max-height: 4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    letter-spacing: 0.5px;
+    /* margin-inline: 20%;
+    margin-block: 20%; */
+  }

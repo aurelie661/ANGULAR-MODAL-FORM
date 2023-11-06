@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
+import Movie from 'src/app/models/movie/movie.module';
 
 @Component({
   selector: 'app-detail',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./detail.component.css']
 })
 export class DetailComponent {
+  @Input()
+  movies: Movie[] = []
 
+  onDelete(movie: Movie){
+    // this.movies.splice(index,1)
+    this.movies =[...this.movies, movie]
+    }
 }

@@ -1,1 +1,13 @@
-<p>modal works!</p>
+<div class="background" (click)="onClose($event)">
+    <div class="content">
+        <div class="header">
+            <button (click)="onClose()">X</button>
+        </div>
+        <div class="body">
+            <ng-content></ng-content>
+        </div>
+        <div class="footer">
+            <app-button (click)="onClose()">Fermer</app-button>
+        </div>
+    </div>
+</div>
