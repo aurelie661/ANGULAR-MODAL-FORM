@@ -1,14 +1,13 @@
 <div class="container">
     <h2>Ajouter un film</h2>
     <hr />
-    <form (submit)="addMovie($event)">
+    <form >
       <div>
         <label for="title">Titre :</label>
         <input
           type="text"
           id="title"
           name="title"
-          [(ngModel)]="movie.title"
           required
         />
       </div>
@@ -18,7 +17,6 @@
           type="text"
           id="description"
           name="description"
-          [(ngModel)]="movie.gender"
           required
         />
       </div>

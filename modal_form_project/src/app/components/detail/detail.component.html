@@ -1,13 +1,12 @@
-<p *ngIf="movies.length === 0; else elseblock">
-    Il n'y a pas de film !
-  </p>
-<ng-template #elseblock>
-    <div class="card container" style="width: 21rem;" *ngFor="let m of movies; let i = index;">
-      <hr>
-      <div class="card-body">
-        <h2 class="text-center">{{ m.title }}</h2>
-        <h3 class="text-center">{{ m.gender }}</h3>
-        <app-button (click)="onDelete(m)" >Supprimer</app-button>
-      </div>
-    </div>
-  </ng-template>
+<div
+  class="card container"
+  style="width: 21rem"
+  *ngFor="let m of movies; let i = index"
+>
+  <hr />
+  <div class="card-body">
+    <h2 class="text-center">{{ movies ? m.title : "Unknown title" }}</h2>
+    <h3 class="text-center">{{ movies ? m.gender : "Unknown gender" }}</h3>
+    <app-button (click)="onDelete(m)">Supprimer</app-button>
+  </div>
+</div>

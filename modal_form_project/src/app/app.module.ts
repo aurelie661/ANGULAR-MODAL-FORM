@@ -16,14 +16,10 @@ import { MovieService } from './services/movie.service';
     FormComponent,
     ModalComponent,
     DetailComponent,
-    ButtonComponent
+    ButtonComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [MovieService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

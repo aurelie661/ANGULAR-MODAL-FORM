@@ -9,22 +9,9 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class FormComponent {
   constructor(private movieService: MovieService) {}
-  movie:Movie ={
-    id:0,
-    title:'',
-    gender:''
-  }
+  
   
   @Output('movie')
   movieAdded = new EventEmitter<Movie>();
 
-  addMovie(event: Event) {
-    event.preventDefault();
-    this.movieAdded.emit(this.movie);
-    this.movie = {
-      id: 0,
-      title: '',
-      gender: '',
-    };
-  }
 }
